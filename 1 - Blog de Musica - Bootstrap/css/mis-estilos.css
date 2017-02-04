@@ -1,0 +1,208 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #CDE2F7;
+}
+/* -------------------------------------------------------------
+Encabezado de la Página
+------------------------------------------------------------- */
+.encabezado {
+    width: 100%;
+    height: 85px;
+    background: #84B4E5;
+    /*border-radius: 20px 20px 0px 0px;*/
+}
+.redes-sociales {
+    height: 45px;
+    margin: 10px;
+    display: block;
+    float: left;
+}
+.img-social {
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+}
+.logo-img {
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+    margin: 5px 10px 0px 5px;
+}
+/* -------------------------------------------------------------
+Barra de Navegación de la Página
+------------------------------------------------------------- */
+.barra_navegacion {
+    margin-top: 80px;
+    background: #6C94BC;
+}
+.barra_navegacion a {
+    color: black;
+    font-size: 1.5em;
+}
+.icono-img {
+    margin-left: 35px;
+    width: 30px;
+    height: 30px;
+}
+/* -------------------------------------------------------------
+Cuerpo de la Página  ( 100% ) Generales
+------------------------------------------------------------- */
+.contenido {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+#main-wrapper {
+    height: 100%;
+    overflow-y: auto;
+}
+/* -------------------------------------------------------------
+Articulos o Artistas de la Página
+------------------------------------------------------------- */
+.articulo1, .articulo2 {
+    position: relative;
+    height: 50%;
+    overflow-y: auto;
+     margin: 0px 10px 0px 10px;
+}
+.articulo2 {
+    margin: 10px 10px 0px 10px;
+    border-top: 2px solid #6C94BC;
+}
+.foto-pagina {
+    height: 10%;
+    padding: 10px;
+}
+.foto-pagina img {
+    border-radius: 20px;
+    border: 5px solid #6C94BC;
+    width: 100%;
+}
+.comentarios {
+    margin: 10px 0px 10px 0px;
+}
+.comentario-img img {
+    width: 50px;
+    height: 50px;
+}
+textarea:hover {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    transition: all 0.15s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.azul:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    border: 2px solid rgba(0, 0, 255, 0.8);
+}
+/* -------------------------------------------------------------
+Barra Lateral de Opciones de Busqueda
+------------------------------------------------------------- */
+#sidebar-wrapper {
+    height: 100%;
+    padding: 0;
+    /*border-left: 4px solid #6C94BC;*/
+}
+#sidebar {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    overflow: hidden;
+}
+#sidebar .list-group-item {
+    background: #84B4E5;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+    /*border: 10px 0px 0px 0px;*/
+}
+#sidebar .list-group-item:hover {
+    background: #6C94BC;
+}
+.barra-lateral {
+    height: 80%;
+    padding-top: 20px;
+    font-size: 1em;
+}
+.barra-lateral h4{
+     font-weight: bold;
+}
+.barra-lateral-icono{
+     margin-left: 10px;
+}
+.barra-lateral-items {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: .95em;
+    font-weight: bold;
+}
+.busqueda input {
+    margin-top: 20px;
+}
+/* -------------------------------------------------------------
+Ajustes para Equipos SM de 768px a 991px
+------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        /*background-color: orange;*/
+    }
+    .barra_navegacion a {
+        font-size: 1.25em;
+    }
+    .icono-img {
+        margin-left: 10px;
+    }
+    .contenido {
+        font-size: 1.25em;
+    }
+    .barra-lateral {
+        padding-top: 10px;
+        font-size: 1em;
+    }
+    .comentario-img img {
+        width: 50px;
+        height: 50px;
+    }
+    .foto-pagina img {
+        border-radius: 15px;
+        border: 4px solid #6C94BC;
+    }
+}
+/* -------------------------------------------------------------
+Ajustes para Equipos XS menos de 767px
+------------------------------------------------------------- */
+@media (max-width: 767px) {
+    body {
+        /*background-color: pink;*/
+    }
+    .barra_navegacion a {
+        font-size: 1em;
+    }
+    .icono-img {
+        margin-left: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    .contenido {
+        font-size: 1.3em;
+    }
+    .barra-lateral {
+        padding-top: 0px;
+        font-size: .9em;
+    }
+    .comentario-img img {
+        width: 40px;
+        height: 40px;
+    }
+    .foto-pagina img {
+        border-radius: 10px;
+        border: 3px solid #6C94BC;
+    }
+}
